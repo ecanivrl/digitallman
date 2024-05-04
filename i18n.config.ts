@@ -1,7 +1,7 @@
 import { createI18nMiddleware } from "next-international/middleware";
 
 const i18nConfig = {
-  locales: ["en", "fr"],
+  locales: ["en", "tr", "de"],
   defaultLocale: "en",
   urlMappingStrategy: "rewriteDefault",
 } as const satisfies Parameters<typeof createI18nMiddleware>[0];

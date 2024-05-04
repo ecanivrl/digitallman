@@ -1,8 +1,21 @@
 {
+  "all-rights-reserved": "All Rights Reserved",
+  "communication-studies": "Communication Studies",
+  "contact": "Contact",
+  "contact-us": "Contact Us",
+  "corporate-image-studies": "Corporate Image Studies",
+  "corporate-website": "Corporate Website",
+  "digital-media-studies": "Digital Media Studies",
+  "institutional": "Institutional",
+  "our-demos": "Our Demos",
+  "social-media": "Social Media",
+  "software-studies": "Software Studies",
   "something-went-wrong": "Something went wrong!",
   "theme.dark": "Dark",
   "theme.light": "Light",
   "theme.system": "System",
   "try-again": "Try again",
-  "user": "User"
+  "user": "User",
+  "what-we-do": "What We Do?",
+  "who-are-we": "Who Are We?"
 }

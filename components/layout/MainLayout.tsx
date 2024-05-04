@@ -1,5 +1,8 @@
 import { ComponentPropsWithoutRef } from "react";
 import { twMerge } from "tailwind-merge";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import clsx from "clsx";
 
 const MainLayout = async ({
   className,
@@ -7,15 +10,11 @@ const MainLayout = async ({
   ...rest
 }: ComponentPropsWithoutRef<"main">) => {
   return (
-    <main
-      className={twMerge(
-        "min-h-screen bg-white text-black dark:bg-black dark:text-white",
-        className,
-      )}
-      {...rest}
-    >
-      {children}
-    </main>
+    <div className={twMerge("text-black400", className)} {...rest}>
+      <Navbar />
+      <main className={clsx("min-h-screen bg-white")}>{children}</main>
+      <Footer />
+    </div>
   );
 };
 
