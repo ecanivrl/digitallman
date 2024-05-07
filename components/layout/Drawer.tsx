@@ -6,6 +6,7 @@ import CloseSVG from "@/public/icons/close.svg";
 import { NavLink } from "./Navbar";
 import { useI18n } from "@/i18n/client";
 import LocaleSelector from "../common/LocaleSelector";
+import Link from "next/link";
 const Drawer = ({
   isOpen,
   setIsOpen,
@@ -34,6 +35,9 @@ const Drawer = ({
     }
   }, [isOpen]);
 
+  const NavLinkClasses =
+    "w-full border border-black text-center  hover:scale-90 transition-all duration-300";
+
   return (
     <aside
       ref={ref}
@@ -48,34 +52,38 @@ const Drawer = ({
         }}
       />
       <div className="flex w-full flex-col gap-y-10">
-        <h1 className="text-xl font-bold">Digitallman.com</h1>
+        <Link href="/">
+          <h1 className="mt-5 rounded-lg border border-black p-2 text-center text-lg font-bold text-black hover:bg-gray-200 lg:text-2xl">
+            Digitallman.com
+          </h1>
+        </Link>
 
         <NavLink
-          className="w-full border border-black text-center"
+          className={NavLinkClasses}
           title={t("home.homepage")}
           link="/"
           onClick={() => setIsOpen(false)}
         />
         <NavLink
-          className="w-full border border-black text-center"
+          className={NavLinkClasses}
           title={t("common.who-are-we")}
-          link="#hakkımızda"
+          link="/who-are-we"
           onClick={() => setIsOpen(false)}
         />
         <NavLink
-          className="w-full border border-black text-center"
+          className={NavLinkClasses}
           title={t("common.what-we-do")}
-          link="#hizmetlerimiz"
+          link="/what-we-do"
           onClick={() => setIsOpen(false)}
         />
         <NavLink
-          className="w-full border border-black text-center"
+          className={NavLinkClasses}
           title={t("common.our-demos")}
-          link="#galeri"
+          link="/our-demos"
           onClick={() => setIsOpen(false)}
         />
         <NavLink
-          className="w-full border border-black text-center"
+          className={NavLinkClasses}
           title={t("common.contact")}
           link="/contact"
           onClick={() => setIsOpen(false)}

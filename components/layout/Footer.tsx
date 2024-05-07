@@ -12,6 +12,7 @@ import InstagramSVG from "@/public/icons/instagram.svg";
 import FacebookSVG from "@/public/icons/facebook.svg";
 import LinkedinSVG from "@/public/icons/linkedin.svg";
 import PhoneSVG from "@/public/icons/phone.svg";
+import TwitterSVG from "@/public/icons/twitter.svg";
 
 const Footer = ({ className, ...rest }: ComponentPropsWithoutRef<"footer">) => {
   const t = useI18n();
@@ -43,6 +44,9 @@ const Footer = ({ className, ...rest }: ComponentPropsWithoutRef<"footer">) => {
                 </a>
                 <a target="_blank" href="/?">
                   <FacebookSVG className={svgClasses} />
+                </a>
+                <a target="_blank" href="/?">
+                  <TwitterSVG className={svgClasses} />
                 </a>
                 <a target="_blank" href="/?">
                   <YoutubeSVG className={svgClasses} />

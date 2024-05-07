@@ -19,9 +19,11 @@ import MailSVG from "@/public/icons/mail.svg";
 import YoutubeSVG from "@/public/icons/youtube.svg";
 import InstagramSVG from "@/public/icons/instagram.svg";
 import FacebookSVG from "@/public/icons/facebook.svg";
+import TwitterSVG from "@/public/icons/twitter.svg";
 import LinkedinSVG from "@/public/icons/linkedin.svg";
 import LocaleSelector from "../common/LocaleSelector";
 import { useI18n } from "@/i18n/client";
+import FlyoutLink, { PricingContent } from "./FloyutLink";
 
 const Navbar = ({ className, ...rest }: ComponentPropsWithoutRef<"header">) => {
   const t = useI18n();
@@ -50,7 +52,7 @@ const Navbar = ({ className, ...rest }: ComponentPropsWithoutRef<"header">) => {
       <header
         className={clsx(
           "flex w-full py-4 transition-all duration-300",
-          "bg-gray-100",
+          "bg-white",
           "max-md:shadow-[0px_4px_20px_rgba(0,0,0,0.1);]",
           scrolled &&
             "supports-[backdrop-filter]:bg-white/60 supports-[backdrop-filter]:backdrop-blur-md max-md:supports-[backdrop-filter]:bg-white/60",
@@ -64,14 +66,21 @@ const Navbar = ({ className, ...rest }: ComponentPropsWithoutRef<"header">) => {
                   Digitallman.com
                 </h1>
               </Link>
-              <div className="flex items-center justify-between gap-x-1">
+              <div className="flex items-center justify-between gap-x-px">
                 <NavLink title={t("home.homepage")} link="/" />
-                <NavLink title={t("common.who-are-we")} link="/debb" />
-                <NavLink title={t("common.what-we-do")} link="/wfwf" />
-                <NavLink title={t("common.our-demos")} link="/avaf" />
+                <NavLink title={t("common.who-are-we")} link="/who-are-we" />
+                <NavLink
+                  title={t("common.what-we-do")}
+                  link="/what-we-do"
+                  className="xl:hidden"
+                />
+                <FlyoutLink href="/what-we-do" FlyoutContent={PricingContent}>
+                  {t("common.what-we-do")}
+                </FlyoutLink>
+                <NavLink title={t("common.our-demos")} link="/our-demos" />
                 <NavLink title={t("common.contact")} link="/contact" />
-                <LocaleSelector />
               </div>
+              <LocaleSelector />
             </div>
           ) : (
             <div className="flex w-full items-center justify-between">
@@ -114,7 +123,7 @@ export const NavLink = ({
     <Link
       onClick={onClick}
       className={twMerge(
-        `${isCurrentRoute ? "font-bold" : "hover:text-black300"}
+        `${isCurrentRoute ? "font-bold" : "hover:text-red-500"}
          whitespace-nowrap px-2.5 py-2 text-sm font-semibold
          `,
         className,
@@ -132,7 +141,7 @@ export const TopInformation = () => {
 
   return (
     <>
-      <div className="w-full bg-black400">
+      <div className="w-full bg-black">
         <PageHorizontalPaddingContainer className="mx-auto flex w-full max-w-[1340px] items-center justify-between px-5 py-5 max-[900px]:hidden md:px-10 ">
           <div className="flex items-center gap-x-2 text-xs">
             <LocationSVG className={svgClasses} />
@@ -153,6 +162,12 @@ export const TopInformation = () => {
               </span>
               <InstagramSVG className={svgClasses} />
               <FacebookSVG className={svgClasses} />
+              <TwitterSVG
+                className={twMerge(
+                  svgClasses,
+                  "[&_circle]:stroke-white [&_path]:fill-white",
+                )}
+              />
               <YoutubeSVG className={svgClasses} />
               <LinkedinSVG className={svgClasses} />
             </div>

@@ -23,3 +23,14 @@ export const languageList = {
 };
 
 export type LanguageCode = keyof typeof languageList;
+
+export const getLocalizedPhoneInputLabels = async (locale: LanguageCode) => {
+  switch (locale) {
+    case "en":
+      return (await import("react-phone-number-input/locale/en.json")).default;
+    case "tr":
+      return (await import("react-phone-number-input/locale/tr.json")).default;
+    case "de":
+      return (await import("react-phone-number-input/locale/de.json")).default;
+  }
+};

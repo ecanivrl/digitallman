@@ -24,6 +24,7 @@
     "@tanstack/react-query-devtools": "5.17.21",
     "axios": "1.6.7",
     "clsx": "2.1.0",
+    "framer-motion": "11.1.8",
     "intl-locale-textinfo-polyfill": "2.1.1",
     "jotai": "2.6.3",
     "jotai-devtools": "0.7.1",
