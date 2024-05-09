@@ -28,14 +28,14 @@ const FlyoutLink = ({ href, children, FlyoutContent }: FlyoutContentProps) => {
     >
       <Link
         href={href}
-        className="relative text-sm font-semibold text-black400 hover:text-red-500"
+        className="relative text-sm font-semibold text-black400 hover:text-red-500 lg:text-lg"
       >
         {children}
         <span
           style={{
             transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
           }}
-          className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left rounded-full bg-black transition-transform duration-300 ease-out"
+          className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left rounded-full bg-gradient-radial from-red-500 to-black transition-transform duration-300 ease-out"
         />
       </Link>
       <AnimatePresence>
@@ -46,11 +46,8 @@ const FlyoutLink = ({ href, children, FlyoutContent }: FlyoutContentProps) => {
             exit={{ opacity: 0, y: 80 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             style={{ x: "-50%" }}
-            className="absolute left-1/2 top-[53px]"
+            className="absolute left-[144px] top-12 -translate-x-1/2 -translate-y-1/2 transform"
           >
-            <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
-            <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-gradient-radial from-black via-red-500 to-black" />
-            {/*  */}
             <FlyoutContent />
           </motion.div>
         )}
@@ -65,109 +62,104 @@ export const PricingContent = () => {
   const t = useI18n();
 
   return (
-    <div className=" flex w-full items-center justify-center">
-      <div className="flex h-full w-full flex-row justify-between gap-10 rounded-lg bg-gradient-to-b from-red-500 to-black p-4 shadow-lg">
-        <div className="flex flex-col gap-y-1 rounded-lg bg-white p-3 shadow-md">
-          <h2 className="border-b border-red-400 text-lg font-semibold text-black">
-            {t("common.corporate-image-studies")}
-          </h2>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink
-              title={t("common.corporate-identity-studies")}
-              link="/test"
-            />
-          </div>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink title={t("common.graphic-design-studies")} link="/test" />
-          </div>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink title={t("common.promotional-films")} link="/test" />
-          </div>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink title={t("common.post-production-service")} link="/test" />
-          </div>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink title={t("common.brand-consultancy")} link="/test" />
-          </div>
+    <div className="grid w-screen grid-cols-4 gap-5 rounded-lg bg-black p-6 shadow-lg">
+      <div className="flex w-full flex-col gap-y-1 rounded-lg bg-white p-3 shadow-md">
+        <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
+          {t("common.corporate-image-studies")}
+        </h2>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink
+            title={t("common.corporate-identity-studies")}
+            link="/test"
+          />
         </div>
-        <div className="flex flex-col gap-y-1  rounded-lg bg-white p-3 shadow-md">
-          <h2 className="border-b border-red-400 text-xl font-semibold text-black">
-            {t("common.digital-media-studies")}
-          </h2>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink
-              title={t("common.social-media-account-management")}
-              link="/test"
-            />
-          </div>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink
-              title={t("common.social-media-advertising-management")}
-              link="/test"
-            />
-          </div>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink
-              title={t("common.google-ads-advertising-management")}
-              link="/test"
-            />
-          </div>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-
-            <NavLink
-              title={t("common.registration-service-maps")}
-              link="/test"
-            />
-          </div>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink title={t("common.seo-service")} link="/test" />
-          </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink title={t("common.graphic-design-studies")} link="/test" />
         </div>
-        <div className="flex flex-col gap-y-1  rounded-lg bg-white p-3 shadow-md">
-          <h2 className="border-b border-red-400 text-xl font-semibold text-black">
-            {t("common.communication-studies")}
-          </h2>
-
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink title={t("common.corporate-website")} link="/test" />
-          </div>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink title={t("common.e-commer-site")} link="/test" />
-          </div>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink title={t("common.des")} link="/test" />
-          </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink title={t("common.promotional-films")} link="/test" />
         </div>
-        <div className="flex flex-col gap-y-1  rounded-lg bg-white p-3 shadow-md">
-          <h2 className="border-b border-red-400 text-xl font-semibold text-black">
-            {t("common.software-studies")}
-          </h2>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink title={t("common.post-production-service")} link="/test" />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink title={t("common.brand-consultancy")} link="/test" />
+        </div>
+      </div>
+      <div className="flex w-full flex-col  gap-y-1 rounded-lg bg-white p-3 shadow-md">
+        <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
+          {t("common.digital-media-studies")}
+        </h2>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink
+            title={t("common.social-media-account-management")}
+            link="/test"
+          />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink
+            title={t("common.social-media-advertising-management")}
+            link="/test"
+          />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink
+            title={t("common.google-ads-advertising-management")}
+            link="/test"
+          />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
 
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink title={t("common.tv-advertising-works")} link="/test" />
-          </div>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink title={t("common.radio-advertising-works")} link="/test" />
-          </div>
-          <div className="flex items-center">
-            <TickSVG className="h-4 w-4" />
-            <NavLink title={t("common.voice-over-service")} link="/test" />
-          </div>
+          <NavLink title={t("common.registration-service-maps")} link="/test" />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink title={t("common.seo-service")} link="/test" />
+        </div>
+      </div>
+      <div className="flex w-full flex-col  gap-y-1 rounded-lg bg-white p-3 shadow-md">
+        <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
+          {t("common.communication-studies")}
+        </h2>
+
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink title={t("common.corporate-website")} link="/test" />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink title={t("common.e-commer-site")} link="/test" />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink title={t("common.des")} link="/test" />
+        </div>
+      </div>
+      <div className="flex w-full flex-col  gap-y-1 rounded-lg bg-white p-3 shadow-md">
+        <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
+          {t("common.software-studies")}
+        </h2>
+
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink title={t("common.tv-advertising-works")} link="/test" />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink title={t("common.radio-advertising-works")} link="/test" />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink title={t("common.voice-over-service")} link="/test" />
         </div>
       </div>
     </div>

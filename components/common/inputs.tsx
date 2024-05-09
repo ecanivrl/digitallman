@@ -135,9 +135,9 @@ export const CheckboxInput = React.forwardRef<
         type="checkbox"
         className={twMerge(
           "relative h-4 w-4 shrink-0 cursor-pointer appearance-none rounded border border-black bg-white",
-          "checked:bg-white hover:ring hover:ring-transparent focus:outline-none",
+          "checked:border-green-500 checked:bg-white hover:ring hover:ring-transparent focus:outline-none",
           "disabled:cursor-not-allowed disabled:border-black200 disabled:checked:bg-black200",
-          "after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[url('/icons/tick1.svg')] after:bg-[length:80%] after:bg-center after:bg-no-repeat after:content-['']",
+          "after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[url('/icons/tick-black.svg')] after:bg-[length:80%] after:bg-center after:bg-no-repeat after:content-['']",
           className,
         )}
         {...rest}

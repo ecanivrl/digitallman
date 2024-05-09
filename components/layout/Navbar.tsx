@@ -42,6 +42,7 @@ const Navbar = ({ className, ...rest }: ComponentPropsWithoutRef<"header">) => {
     };
   }, []);
   const { md } = useResponsive({ watchPoints: ["md"] });
+  const { lg } = useResponsive({ watchPoints: ["lg"] });
 
   return (
     <div
@@ -68,15 +69,16 @@ const Navbar = ({ className, ...rest }: ComponentPropsWithoutRef<"header">) => {
               </Link>
               <div className="flex items-center justify-between gap-x-px">
                 <NavLink title={t("home.homepage")} link="/" />
-                <NavLink title={t("common.who-are-we")} link="/who-are-we" />
+                <FlyoutLink href="/what-we-do" FlyoutContent={PricingContent}>
+                  {t("common.what-we-do")}
+                </FlyoutLink>
+                <NavLink title={t("common.about")} link="/about" />
                 <NavLink
                   title={t("common.what-we-do")}
                   link="/what-we-do"
                   className="xl:hidden"
                 />
-                <FlyoutLink href="/what-we-do" FlyoutContent={PricingContent}>
-                  {t("common.what-we-do")}
-                </FlyoutLink>
+
                 <NavLink title={t("common.our-demos")} link="/our-demos" />
                 <NavLink title={t("common.contact")} link="/contact" />
               </div>
@@ -124,7 +126,7 @@ export const NavLink = ({
       onClick={onClick}
       className={twMerge(
         `${isCurrentRoute ? "font-bold" : "hover:text-red-500"}
-         whitespace-nowrap px-2.5 py-2 text-sm font-semibold
+         whitespace-nowrap px-2.5 py-2 text-sm font-semibold transition-transform duration-200 hover:scale-90 lg:text-lg
          `,
         className,
       )}
@@ -141,23 +143,23 @@ export const TopInformation = () => {
 
   return (
     <>
-      <div className="w-full bg-black">
-        <PageHorizontalPaddingContainer className="mx-auto flex w-full max-w-[1340px] items-center justify-between px-5 py-5 max-[900px]:hidden md:px-10 ">
-          <div className="flex items-center gap-x-2 text-xs">
+      <div className="w-full bg-black max-[900px]:hidden">
+        <PageHorizontalPaddingContainer className="mx-auto flex w-full max-w-[1340px] items-center justify-between px-5 py-5 md:px-10 ">
+          <div className="flex items-center gap-x-2">
             <LocationSVG className={svgClasses} />
-            <p className="text-xs font-semibold text-white">
+            <p className="text-xs font-semibold text-white lg:text-sm">
               Bozkurt Mah. Selvi Sok. No 1410. İstanbul, Türkiye
             </p>
           </div>
           <div className="flex items-center justify-between gap-x-10">
             <div className="flex items-center gap-x-2">
               <MailSVG className={svgClasses} />
-              <p className="text-xs font-semibold text-white">
+              <p className="text-xs font-semibold text-white lg:text-sm">
                 digitallman@gmail.com
               </p>
             </div>
             <div className="flex items-center gap-x-4">
-              <span className="text-xs font-semibold text-white">
+              <span className="text-xs font-semibold text-white lg:text-sm">
                 {t("common.social-media")}
               </span>
               <InstagramSVG className={svgClasses} />

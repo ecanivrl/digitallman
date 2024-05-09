@@ -66,8 +66,8 @@ const Drawer = ({
         />
         <NavLink
           className={NavLinkClasses}
-          title={t("common.who-are-we")}
-          link="/who-are-we"
+          title={t("common.about")}
+          link="/about"
           onClick={() => setIsOpen(false)}
         />
         <NavLink

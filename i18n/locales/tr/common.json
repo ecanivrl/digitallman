@@ -1,4 +1,5 @@
 {
+  "about": "Hakkımızda",
   "all-rights-reserved": "Tüm Hakları Saklıdır.",
   "brand-consultancy": "Marka Danışmanlığı",
   "communication-studies": "İletişim Çalışmaları",
@@ -20,6 +21,8 @@
   "google-ads-advertising-management": "Google Ads Reklam Yönetimi",
   "graphic-design-studies": "Grafik Dizayn Çalışmaları",
   "institutional": "Kurumsal",
+  "learn-more": "Daha Fazla",
+
   "mobil-application-and-development": "Mobil Uygulama ve Geliştirme",
   "name": "Ad",
   "our-demos": "Demolarımız",
@@ -43,6 +46,5 @@
   "tv-advertising-works": "TV Reklam Çalışmaları",
   "user": "Utilisateur",
   "voice-over-service": "Seslendirme Hzimeti",
-  "what-we-do": "Neler Yapıyoruz?",
-  "who-are-we": "Biz Kimiz?"
+  "what-we-do": "Neler Yapıyoruz?"
 }

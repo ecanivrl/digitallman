@@ -1,4 +1,5 @@
 {
+  "about": "Über Uns",
   "all-rights-reserved": "Alle Rechte vorbehalten",
   "brand-consultancy": "Markenberatung",
   "communication-studies": "Kommunikationswissenschaften",
@@ -19,6 +20,7 @@
   "google-ads-advertising-management": "Google Ads-Werbeverwaltung",
   "graphic-design-studies": "Grafikdesign Studium",
   "institutional": "Institutionell",
+  "learn-more": "Lern Mehr",
   "mobil-application-and-development": "Mobile Anwendung und Entwicklung",
   "name": "Name",
   "our-demos": "Unsere Demos",
@@ -42,6 +44,5 @@
   "tv-advertising-works": "TV Werbearbeiten",
   "user": "User",
   "voice-over-service": "Voice Over Service",
-  "what-we-do": "Was Wir Tun?",
-  "who-are-we": "Wer Sind Wir?"
+  "what-we-do": "Was Wir Tun?"
 }
