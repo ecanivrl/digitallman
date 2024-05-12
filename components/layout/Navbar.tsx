@@ -67,7 +67,7 @@ const Navbar = ({ className, ...rest }: ComponentPropsWithoutRef<"header">) => {
                   Digitallman.com
                 </h1>
               </Link>
-              <div className="flex items-center justify-between gap-x-px">
+              <div className="flex grow items-center justify-evenly gap-x-px">
                 <NavLink title={t("home.homepage")} link="/" />
                 <FlyoutLink href="/what-we-do" FlyoutContent={PricingContent}>
                   {t("common.what-we-do")}

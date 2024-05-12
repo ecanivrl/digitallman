@@ -46,7 +46,7 @@ const FlyoutLink = ({ href, children, FlyoutContent }: FlyoutContentProps) => {
             exit={{ opacity: 0, y: 80 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             style={{ x: "-50%" }}
-            className="absolute left-[144px] top-12 -translate-x-1/2 -translate-y-1/2 transform"
+            className="absolute left-[207px] top-12 -translate-x-1/2 -translate-y-1/2 transform"
           >
             <FlyoutContent />
           </motion.div>

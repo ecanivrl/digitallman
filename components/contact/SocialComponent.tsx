@@ -18,23 +18,29 @@ const SocialComponent = ({ className }: { className?: string }) => {
     >
       <div className="flex items-center gap-x-2">
         <YoutubeSVG className={svgClasses} />
-        <p className="text-xs font-semibold text-black">Youtube</p>
+        <p className="text-xs font-semibold text-black sm:text-base">Youtube</p>
       </div>
       <div className="flex items-center gap-x-2">
         <InstagramSVG className={svgClasses} />
-        <p className="text-xs font-semibold text-black">Instagram</p>
+        <p className="text-xs font-semibold text-black sm:text-base">
+          Instagram
+        </p>
       </div>
       <div className="flex items-center gap-x-2">
         <TwitterSVG className={svgClasses} />
-        <p className="text-xs font-semibold text-black">Twitter</p>
+        <p className="text-xs font-semibold text-black sm:text-base">Twitter</p>
       </div>
       <div className="flex items-center gap-x-2">
         <FacebookSVG className={svgClasses} />
-        <p className="text-xs font-semibold text-black">Facebook</p>
+        <p className="text-xs font-semibold text-black sm:text-base">
+          Facebook
+        </p>
       </div>
       <div className="flex items-center gap-x-2">
         <LinkedinSVG className={svgClasses} />
-        <p className="text-xs font-semibold text-black">Linkedin</p>
+        <p className="text-xs font-semibold text-black sm:text-base">
+          Linkedin
+        </p>
       </div>
     </div>
   );

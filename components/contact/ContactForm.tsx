@@ -14,9 +14,9 @@ const ContactForm = ({ className }: { className?: string }) => {
   const t = useI18n();
 
   return (
-    <Container className="w-full max-w-5xl">
-      <div className={twMerge("my-10 w-full", className)}>
-        <h1 className="mb-2 text-center text-2xl font-semibold text-black md:text-4xl">
+    <Container className="my-16 w-full max-w-5xl">
+      <div className={twMerge("w-full", className)}>
+        <h1 className="mb-2 text-center text-3xl font-semibold text-black md:text-6xl">
           {t("common.contact-form")}
         </h1>
         <div className="flex w-full flex-col items-center justify-center gap-5 md:flex-row md:gap-20">
@@ -58,10 +58,10 @@ const ContactForm = ({ className }: { className?: string }) => {
           </div>
         </div>
         <FormGroupContainer className="mt-3">
-          <Label htmlFor="message">Mesajınız</Label>
+          <Label htmlFor="message">{t("common.message")}</Label>
           <TextAreaInput
             name="message"
-            placeholder="Mesajınızı buraya yazınız"
+            placeholder={t("common.enter-message")}
             required
           />
         </FormGroupContainer>
@@ -76,7 +76,7 @@ const ContactForm = ({ className }: { className?: string }) => {
           </label>
         </div>
         <Button variant="negative" className="mx-auto mt-6 w-[60%]">
-          Gönder
+          {t("common.send")}
         </Button>
       </div>
     </Container>

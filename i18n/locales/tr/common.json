@@ -14,7 +14,7 @@
   "e-commer-site": "E-Ticaret Sitesi",
   "email": "E-mail",
   "enter-email": "E-mail adresinizi giriniz",
-
+  "enter-message": "Mesajınızı yazınız",
   "enter-name": "Adınızı giriniz",
   "enter-phone-number": "Telefon no giriniz",
   "enter-surname": "SoyAd giriniz",
@@ -22,7 +22,7 @@
   "graphic-design-studies": "Grafik Dizayn Çalışmaları",
   "institutional": "Kurumsal",
   "learn-more": "Daha Fazla",
-
+  "message": "Mesajınız",
   "mobil-application-and-development": "Mobil Uygulama ve Geliştirme",
   "name": "Ad",
   "our-demos": "Demolarımız",
@@ -32,6 +32,7 @@
   "promotional-films": "Tanıtım Filmleri",
   "radio-advertising-works": "Radyo Reklam Çalışmaları",
   "registration-service-maps": "Haritalara Kayıt Hzimeti",
+  "send": "Gönder",
   "seo-service": "SEO Hizmeti",
   "social-media": "Sosyal Medya",
   "social-media-account-management": "Sosyal Medya Hesap Yönetimi",

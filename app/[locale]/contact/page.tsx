@@ -8,11 +8,12 @@ import React from "react";
 import Address from "@/components/contact/Address";
 import SocialComponent from "@/components/contact/SocialComponent";
 import ContactForm from "@/components/contact/ContactForm";
+import ContactPNG from "@/public/images/contact.png";
 
 const Contact = () => {
   return (
     <>
-      <PageBanner pageName="İletişim" />
+      <PageBanner src={ContactPNG} />
       <PageTopPaddingContainer>
         <PageHorizontalPaddingContainer>
           <Address />
