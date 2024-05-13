@@ -2,7 +2,7 @@ import { generatePageMetadata } from "@/components/utils";
 import { getI18n } from "@/i18n/server";
 import { Metadata, ResolvingMetadata } from "next";
 import { setStaticParamsLocale } from "next-international/server";
-import ContactClientPage from "./page.client";
+import AboutClientPage from "./page.client";
 
 export async function generateMetadata(
   { params: { locale } }: { params: { locale: string } },
@@ -10,10 +10,10 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const t = await getI18n();
 
-  return await generatePageMetadata({ title: t("common.contact") }, parent);
+  return await generatePageMetadata({ title: t("common.about") }, parent);
 }
 
-export default async function Contact({
+export default async function About({
   params: { locale },
 }: {
   params: { locale: string };
@@ -24,7 +24,7 @@ export default async function Contact({
 
   return (
     <>
-      <ContactClientPage />
+      <AboutClientPage />
     </>
   );
 }
