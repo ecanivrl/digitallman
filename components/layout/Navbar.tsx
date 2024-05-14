@@ -69,13 +69,13 @@ const Navbar = ({ className, ...rest }: ComponentPropsWithoutRef<"header">) => {
               </Link>
               <div className="flex grow items-center justify-evenly gap-x-px">
                 <NavLink title={t("home.homepage")} link="/" />
-                <FlyoutLink href="/what-we-do" FlyoutContent={PricingContent}>
+                <FlyoutLink href="/our-services" FlyoutContent={PricingContent}>
                   {t("common.what-we-do")}
                 </FlyoutLink>
                 <NavLink title={t("common.about")} link="/about" />
                 <NavLink
                   title={t("common.what-we-do")}
-                  link="/what-we-do"
+                  link="/our-services"
                   className="xl:hidden"
                 />
 
@@ -126,7 +126,7 @@ export const NavLink = ({
       onClick={onClick}
       className={twMerge(
         `${isCurrentRoute ? "font-bold" : "hover:text-red-500"}
-         whitespace-nowrap px-2.5 py-2 text-sm font-semibold transition-transform duration-200 hover:scale-90 lg:text-lg
+         whitespace-nowrap px-2.5 py-2 text-sm font-semibold transition-transform duration-200 hover:scale-90 lg:text-base
          `,
         className,
       )}

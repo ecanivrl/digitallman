@@ -31,9 +31,11 @@ import useResponsive from "../hooks/useResponsive";
 const Slider = ({
   className,
   cards,
+  per,
   ...rest
 }: ComponentPropsWithoutRef<"div"> & {
   cards: ReactNode[];
+  per?: boolean;
 }) => {
   const { sm } = useResponsive({ watchPoints: ["sm"] });
   const [swiper, setSwiper] = useState<SwiperClass>();
@@ -41,7 +43,12 @@ const Slider = ({
   return (
     <div className={twMerge("relative", className)} {...rest}>
       {/* Navigation */}
-      <div className="absolute bottom-2 left-1/2 z-10 flex -translate-x-1/2 -translate-y-1/2 transform items-center justify-between gap-3 max-sm:hidden">
+      <div
+        className={twMerge(
+          "absolute bottom-2 left-1/2 z-10 flex -translate-x-1/2 -translate-y-1/2 transform items-center justify-between gap-3 max-sm:hidden",
+          per ? "-bottom-16" : "",
+        )}
+      >
         <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-black bg-white p-px hover:scale-125">
           <LeftIcon
             className="h-full w-full cursor-pointer [&_circle]:stroke-white [&_path]:fill-black"
@@ -70,6 +77,7 @@ const Slider = ({
           momentumBounce: false,
           sticky: false,
         }}
+        spaceBetween={per ? 30 : 0}
         mousewheel={{
           forceToAxis: true,
         }}

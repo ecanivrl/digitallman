@@ -78,7 +78,7 @@ const Footer = ({ className, ...rest }: ComponentPropsWithoutRef<"footer">) => {
           </FooterGroup>
           <FooterGroup title={t("common.institutional")}>
             <NavLink title={t("common.about")} link="/about" />
-            <NavLink title={t("common.what-we-do")} link="/what-we-do" />
+            <NavLink title={t("common.what-we-do")} link="/our-services" />
             <NavLink title={t("common.our-demos")} link="/our-demos" />
             <NavLink title={t("common.contact")} link="/contact" />
             <NavLink title="KVKK" link="/kvkk" />
