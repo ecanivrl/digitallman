@@ -64,9 +64,11 @@ export const PricingContent = () => {
   return (
     <div className="grid w-screen grid-cols-4 gap-5 rounded-lg bg-black p-6 shadow-lg">
       <div className="flex w-full flex-col gap-y-1 rounded-lg bg-white p-3 shadow-md">
-        <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-          {t("common.corporate-image-studies")}
-        </h2>
+        <Link href="/our-services/corporate-image-studies">
+          <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
+            {t("common.corporate-image-studies")}
+          </h2>
+        </Link>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
@@ -92,9 +94,11 @@ export const PricingContent = () => {
         </div>
       </div>
       <div className="flex w-full flex-col  gap-y-1 rounded-lg bg-white p-3 shadow-md">
-        <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-          {t("common.digital-media-studies")}
-        </h2>
+        <Link href="/our-services/digital-media-studies">
+          <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
+            {t("common.digital-media-studies")}
+          </h2>
+        </Link>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
@@ -127,9 +131,11 @@ export const PricingContent = () => {
         </div>
       </div>
       <div className="flex w-full flex-col  gap-y-1 rounded-lg bg-white p-3 shadow-md">
-        <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-          {t("common.communication-studies")}
-        </h2>
+        <Link href="/our-services/contact-studies">
+          <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
+            {t("common.communication-studies")}
+          </h2>
+        </Link>
 
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
@@ -145,9 +151,11 @@ export const PricingContent = () => {
         </div>
       </div>
       <div className="flex w-full flex-col  gap-y-1 rounded-lg bg-white p-3 shadow-md">
-        <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-          {t("common.software-studies")}
-        </h2>
+        <Link href="/our-services/software-studies">
+          <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
+            {t("common.software-studies")}
+          </h2>
+        </Link>
 
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
