@@ -27,7 +27,8 @@ const ScrollToTopButton = ({ className }: { className?: string }) => {
         rel="noopener noreferrer"
         className={twMerge(
           "fixed  bottom-[74px] right-3 rounded-full border border-white bg-white p-1 shadow-lg shadow-[#57B752]",
-          "z-50 cursor-pointer",
+          "z-50 animate-bounce cursor-pointer",
+          !status && "bottom-4",
           className,
         )}
       >

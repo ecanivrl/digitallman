@@ -6,6 +6,8 @@ import AboutPNG from "@/public/images/about.png";
 import Button from "../common/Button";
 import { useI18n } from "@/i18n/client";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/data/variants";
 
 const AboutComponent = () => {
   const t = useI18n();
@@ -16,7 +18,13 @@ const AboutComponent = () => {
         alt="About Us"
         className="h-72 w-full object-cover object-center md:h-96"
       />
-      <div className="flex w-full flex-col gap-y-7">
+      <motion.div
+        variants={fadeIn("left", 0.4)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        className="flex w-full flex-col gap-y-7"
+      >
         <h1 className="font-semibold text-black">
           Dijitallman.com: Dijital Dünyada Başarıya Ulaşmanın Anahtarı
         </h1>
@@ -38,7 +46,7 @@ const AboutComponent = () => {
             {t("common.learn-more")}
           </Button>
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 };

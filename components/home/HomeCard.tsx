@@ -7,6 +7,8 @@ import NextImage from "../NextImage";
 import Link from "next/link";
 import { StaticImageData } from "next/image";
 import { useI18n } from "@/i18n/client";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/data/variants";
 
 type HomeCardProps = {
   img: string | StaticImageData;
@@ -24,7 +26,11 @@ const HomeCard = ({
   const t = useI18n();
 
   return (
-    <div
+    <motion.div
+      variants={fadeIn("up", 0.4)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}
       className={twMerge(
         "group relative flex h-[420px] w-full flex-col rounded-md shadow-md transition-all duration-300 hover:scale-95 ",
         className,
@@ -49,7 +55,7 @@ const HomeCard = ({
           {t("common.learn-more")}
         </Button>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 

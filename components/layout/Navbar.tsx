@@ -145,19 +145,19 @@ export const TopInformation = () => {
     <>
       <div className="w-full bg-black max-[900px]:hidden">
         <PageHorizontalPaddingContainer className="mx-auto flex w-full max-w-[1340px] items-center justify-between px-5 py-5 md:px-10 ">
-          <div className="flex items-center gap-x-2">
+          {/* <div className="flex items-center gap-x-2">
             <LocationSVG className={svgClasses} />
             <p className="text-xs font-semibold text-white lg:text-sm">
               Bozkurt Mah. Selvi Sok. No 1410. İstanbul, Türkiye
             </p>
+          </div> */}
+          <div className="flex items-center gap-x-2">
+            <MailSVG className={svgClasses} />
+            <p className="text-xs font-semibold text-white lg:text-sm">
+              digitallman@gmail.com
+            </p>
           </div>
           <div className="flex items-center justify-between gap-x-10">
-            <div className="flex items-center gap-x-2">
-              <MailSVG className={svgClasses} />
-              <p className="text-xs font-semibold text-white lg:text-sm">
-                digitallman@gmail.com
-              </p>
-            </div>
             <div className="flex items-center gap-x-4">
               <span className="text-xs font-semibold text-white lg:text-sm">
                 {t("common.social-media")}

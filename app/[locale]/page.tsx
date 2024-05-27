@@ -11,6 +11,7 @@ import SliderCard from "@/components/home/SliderCard";
 import { homeCardData, sliderData } from "@/components/home/data";
 import HomeCard from "@/components/home/HomeCard";
 import AboutComponent from "@/components/home/AboutComponent";
+import ServiceRequestSection from "@/components/home/ServiceRequestSection";
 
 export async function generateMetadata(
   { params: { locale } }: { params: { locale: string } },
@@ -55,6 +56,10 @@ export default async function Home({
           </section>
         </PageHorizontalPaddingContainer>
       </PageTopPaddingContainer>
+      {/* ServiceRequestSection */}
+      <PageHorizontalPaddingContainer>
+        <ServiceRequestSection />
+      </PageHorizontalPaddingContainer>
       {/* {About} */}
       <PageTopPaddingContainer>
         <PageHorizontalPaddingContainer>
