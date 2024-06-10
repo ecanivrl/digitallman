@@ -36,7 +36,7 @@ const Drawer = ({
   }, [isOpen]);
 
   const NavLinkClasses =
-    "w-[90%] border py-3 rounded-lg bg-red-500 text-white text-center hover:scale-90 transition-all duration-300 mx-auto";
+    "w-[90%] border py-3 rounded-lg bg-red-500 text-white text-center hover:text-white hover:scale-90 transition-all duration-300 mx-auto";
 
   return (
     <aside

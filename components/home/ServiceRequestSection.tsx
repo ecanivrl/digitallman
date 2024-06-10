@@ -181,7 +181,7 @@ const ServiceRequestSection = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.2 }}
-              className="mb-10 flex flex-wrap items-center justify-center gap-6"
+              className="mb-10 flex flex-wrap items-center justify-center gap-3 sm:gap-6"
             >
               {services.map((service, index) => (
                 <Checkbox
