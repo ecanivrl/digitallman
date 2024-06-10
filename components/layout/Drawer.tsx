@@ -36,23 +36,23 @@ const Drawer = ({
   }, [isOpen]);
 
   const NavLinkClasses =
-    "w-full border border-black text-center  hover:scale-90 transition-all duration-300";
+    "w-[90%] border py-3 rounded-lg bg-red-500 text-white text-center hover:scale-90 transition-all duration-300 mx-auto";
 
   return (
     <aside
       ref={ref}
-      className={`fixed top-0 z-50 h-screen w-[90%] rounded-r-2xl border-r border-gray-100 bg-white px-6 py-1 sm:w-72 ${
-        isOpen ? "left-0" : "-left-full"
-      } drop-shadow-xl transition-all duration-1000`}
+      className={`fixed top-0 z-50 h-screen w-full items-center rounded-r-2xl border-r border-gray-100 bg-white px-6 py-1 drop-shadow-xl
+        transition-all duration-1000 sm:w-72
+         ${isOpen ? "left-0" : "-left-full"} `}
     >
       <CloseSVG
-        className="ml-auto mt-5 w-5 cursor-pointer justify-end"
+        className="ml-auto mt-5 w-6 cursor-pointer justify-end"
         onClick={() => {
           setIsOpen(false);
         }}
       />
       <div className="flex w-full flex-col gap-y-10">
-        <Link href="/">
+        <Link href="/" className="mx-auto w-[90%]">
           <h1 className="mt-5 rounded-lg border border-black p-2 text-center text-lg font-bold text-black hover:bg-gray-200 lg:text-2xl">
             Digitallman.com
           </h1>
@@ -89,7 +89,7 @@ const Drawer = ({
           onClick={() => setIsOpen(false)}
         />
       </div>
-      <LocaleSelector className="mt-8 border border-black bg-gray-100" />
+      <LocaleSelector className="mx-auto mt-8 w-[50%] bg-gray-100 " />
     </aside>
   );
 };

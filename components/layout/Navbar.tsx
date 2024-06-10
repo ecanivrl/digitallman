@@ -87,7 +87,7 @@ const Navbar = ({ className, ...rest }: ComponentPropsWithoutRef<"header">) => {
           ) : (
             <div className="flex w-full items-center justify-between">
               <HamburgerMenuSVG
-                className="cursor-pointer rounded-full"
+                className="ml-2 h-8 w-8 cursor-pointer rounded-full"
                 onClick={() => setDrawerOpen(!isDrawerOpen)}
               />
               <Link href="/">

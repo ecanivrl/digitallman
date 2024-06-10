@@ -71,12 +71,13 @@ const Slider = ({
         onSwiper={setSwiper}
         slidesPerView="auto"
         modules={[Navigation, Pagination, Autoplay, FreeMode, Mousewheel]}
-        freeMode={{
-          enabled: true,
-          momentum: true,
-          momentumBounce: false,
-          sticky: false,
-        }}
+        freeMode={false}
+        //  freeMode={{
+        //   enabled: true,
+        //   momentum: true,
+        //   momentumBounce: false,
+        //   sticky: false,
+        // }}
         spaceBetween={per ? 30 : 0}
         mousewheel={{
           forceToAxis: true,

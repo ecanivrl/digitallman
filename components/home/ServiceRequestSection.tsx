@@ -251,7 +251,7 @@ const ServiceRequestSection = () => {
                 viewport={{ once: true, amount: 0.8 }}
                 className="flex w-full max-w-4xl flex-col gap-5"
               >
-                <div className="flex w-full flex-row items-center justify-between gap-3">
+                <div className="flex w-full flex-col items-center justify-between gap-3 md:flex-row">
                   <FormGroupContainer>
                     <Label htmlFor="name">{t("common.name")}</Label>
                     <TextInput
@@ -277,7 +277,7 @@ const ServiceRequestSection = () => {
                     </p>
                   </FormGroupContainer>
                 </div>
-                <div className="flex w-full flex-row items-center justify-between gap-3">
+                <div className="flex w-full flex-col items-center justify-between gap-3 md:flex-row">
                   <FormGroupContainer>
                     <Label htmlFor="email">{t("common.email")}</Label>
                     <TextInput
