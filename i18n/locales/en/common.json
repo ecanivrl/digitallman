@@ -1,5 +1,6 @@
 {
   "about": "About Us",
+  "about-text": "Our company introduces itself as a well-established advertising agency that has been providing support to companies in the fields of digital media and production in Germany since 1994. Focusing on customer satisfaction, quality, punctuality and best prices, Line Media offers a wide range of services specifically designed to support the existence and development of commercial businesses. As of 2024, it has reshaped this experience according to changing technologies and market needs.",
   "advertising-visual-design": "Advertising Visual Design",
   "all-rights-reserved": "All Rights Reserved",
   "backend": "Backend",
@@ -20,6 +21,8 @@
 
   "des": "Domain Name Corporate & E-mail",
   "digital-marketing": "Digital marketing",
+  "digital-media": "Digital Media",
+
   "digital-media-studies": "Digital Media Studies",
   "e-commer-site": "E-Commerce Website",
   "email": "E-mail",
@@ -33,6 +36,7 @@
   "get-offer-now": "Are you in a hurry? Get an offer now!",
   "get-quote": "Get a Quote",
   "google-ads-advertising-management": "Google Ads Advertising Management",
+  "graphic-design": "Graphic Design",
   "graphic-design-studies": "Graphic Design Studies",
   "institutional": "Institutional",
   "invalid-email": "Invalid E-Mail",

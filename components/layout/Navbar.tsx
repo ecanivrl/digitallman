@@ -111,11 +111,13 @@ export default Navbar;
 export const NavLink = ({
   title,
   link,
+  as,
   className,
   onClick,
 }: {
   title: ReactNode;
   link: string;
+  as?: string;
   className?: string;
   onClick?: () => void;
 }) => {
@@ -131,6 +133,7 @@ export const NavLink = ({
         className,
       )}
       href={link}
+      as={as}
       scroll={!linkUrl.hash}
     >
       {title}

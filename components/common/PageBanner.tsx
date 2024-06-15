@@ -12,7 +12,7 @@ const PageBanner = ({ src, className }: PageBannerProps) => {
   return (
     <div
       className={twMerge(
-        "mt-44 flex h-64 w-full items-center justify-center max-[900px]:mt-24 sm:h-[500px]",
+        "flex h-80 w-full items-center justify-center",
         className,
       )}
     >

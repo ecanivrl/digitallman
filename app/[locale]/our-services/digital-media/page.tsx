@@ -2,7 +2,7 @@ import { generatePageMetadata } from "@/components/utils";
 import { getI18n } from "@/i18n/server";
 import { Metadata, ResolvingMetadata } from "next";
 import { setStaticParamsLocale } from "next-international/server";
-import CorporateImageStudiesClientPage from "./page.client";
+import DigitalMediaClientPage from "./page.client";
 
 export async function generateMetadata(
   { params: { locale } }: { params: { locale: string } },
@@ -11,12 +11,12 @@ export async function generateMetadata(
   const t = await getI18n();
 
   return await generatePageMetadata(
-    { title: t("common.corporate-image-studies") },
+    { title: t("common.digital-media") },
     parent,
   );
 }
 
-export default async function CorporateImageStudies({
+export default async function ContactStudies({
   params: { locale },
 }: {
   params: { locale: string };
@@ -27,7 +27,7 @@ export default async function CorporateImageStudies({
 
   return (
     <>
-      <CorporateImageStudiesClientPage />
+      <DigitalMediaClientPage />
     </>
   );
 }

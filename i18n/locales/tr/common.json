@@ -1,5 +1,6 @@
 {
   "about": "Hakkımızda",
+  "about-text": "Firmamiz, 1994 yılından bu yana Almanya'da dijital medya ve prodüksiyon alanlarında şirketlere destek sağlayan köklü bir reklam ajansı olarak kendini tanıtmaktadır. Müşteri memnuniyeti, kalite, dakiklik ve en iyi fiyatlar üzerine odaklanarak, Line Media ticari işletmelerin varlığını ve gelişimini desteklemek amacıyla özel olarak tasarlanmış geniş bir hizmet yelpazesi sunmaktadır. 2024 yilindan itibaren bu tecrubesini degisen teknolojilere ve pazar ihtiyaclarina gore yenidedn sekillendirmistir.",
   "advertising-visual-design": "Reklam Görseli Tasarımı",
   "all-rights-reserved": "Tüm Hakları Saklıdır.",
   "backend": "Backend",
@@ -18,6 +19,8 @@
   "correct-email": "Lütfen doğru bir e-posta giriniz.",
   "des": "Alan Adı Kurumsal & E-mail",
   "digital-marketing": "Dijital Pazarlama",
+  "digital-media": "Dijital Medya",
+
   "digital-media-studies": "Dijital Medya Çalışmaları",
   "e-commer-site": "E-Ticaret Sitesi",
   "email": "E-mail",
@@ -31,7 +34,8 @@
   "get-offer-now": "Aceleniz var mı? Hemen teklif alın!",
   "get-quote": "Teklif Al",
   "google-ads-advertising-management": "Google Ads Reklam Yönetimi",
-  "graphic-design-studies": "Grafik Dizayn Çalışmaları",
+  "graphic-design": "Grafik Tasarım",
+  "graphic-design-studies": "Grafik Tasarım",
   "institutional": "Kurumsal",
   "invalid-email": "Geçersiz E-posta",
   "learn-more": "Daha Fazla",

@@ -25,22 +25,9 @@ const AboutComponent = () => {
         viewport={{ once: true, amount: 0.2 }}
         className="flex w-full flex-col gap-y-7"
       >
-        <h1 className="font-semibold text-black">
-          Dijitallman.com: Dijital Dünyada Başarıya Ulaşmanın Anahtarı
-        </h1>
-        <p className="text-sm lg:text-lg">
-          Dijitallman.com olarak, Dubai de dijital medya ve prodüksiyon
-          alanlarında lider bir firmayız. Güçlü teknik kadromuz ve yenilikçi
-          bakış açımızla, size en etkili dijital çözümleri sunarak, online
-          dünyada fark yaratmanıza yardımcı oluyoruz.
+        <p className="mb-5 text-sm md:mb-20 lg:text-lg">
+          {t("common.about-text")}
         </p>
-        <ul className="ml-4 list-disc font-bold">
-          <li>Hedeflerinize Ulaşın</li>
-          <li>Markanızın bilinirliğini artırın.</li>
-          <li>Daha fazla müşteriye ulaşın.</li>
-          <li>Satışlarınızı ve karlılığınızı artırın.</li>
-          <li>Rakiplerinizin önüne geçin.</li>
-        </ul>
         <Link href="/about">
           <Button showArrow={false} variant="negative" className="w-full">
             {t("common.learn-more")}

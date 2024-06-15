@@ -11,11 +11,15 @@ import Address from "@/components/contact/Address";
 import SocialComponent from "@/components/contact/SocialComponent";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactPNG from "@/public/images/contact.png";
+import { useI18n } from "@/i18n/client";
 
 const ContactClientPage = () => {
+  const t = useI18n();
   return (
     <>
-      <PageBanner src={ContactPNG} />
+      <h1 className="mt-44 text-center text-3xl font-semibold md:text-6xl">
+        {t("common.contact")}
+      </h1>
       <PageTopPaddingContainer>
         <PageHorizontalPaddingContainer>
           <Address />
@@ -24,6 +28,7 @@ const ContactClientPage = () => {
           <ContactForm />
         </PageHorizontalPaddingContainer>
       </PageTopPaddingContainer>
+      <PageBanner src={ContactPNG} className="my-10" />
     </>
   );
 };

@@ -52,78 +52,29 @@ export const homeCardData = [
   {
     id: 1,
     img: CorporatePng,
-    title: "Kurumsal İmaj Çalışmları",
-    href: "/our-services/corporate-image-studies",
+    title: "Grafik Tasarım",
+    href: "/our-services/graphic-design",
   },
   {
     id: 2,
     img: DigitalPng,
-    title: "Dijital Medya Çalışmaları",
-    href: "/our-services/digital-media-studies",
+    title: "Marka Danışmanlığı",
+    href: "/our-services/brand-consultancy",
   },
   {
     id: 3,
     img: SoftwarePng,
-    title: "Yazılım Çalışmaları",
-    href: "/our-services/software-studies",
+    title: "Dijital Medya",
+    href: "/our-services/digital-media",
   },
   {
     id: 4,
     img: ContactPng,
-    title: "İletişim Çalışmaları",
-    href: "/our-services/contact-studies",
+    title: "Yazılım Çalışmaları",
+    href: "/our-services/software-studies",
   },
 ];
 
-//   {
-//     id: 1,
-//     img: Img1,
-//     title: "Kurumsal İmaj Çalışmları",
-//     href: "/what-we-do",
-//   },
-//   {
-//     id: 2,
-//     img: Img2,
-//     title: "Marka Danışmanlığı",
-//     href: "/what-we-do",
-//   },
-//   {
-//     id: 3,
-//     img: Img3,
-//     title: "SEO Hizmeti",
-//     href: "/what-we-do",
-//   },
-//   {
-//     id: 4,
-//     img: Img4,
-//     title: "Seslendirme Hizmeti",
-//     href: "/what-we-do",
-//   },
-//   {
-//     id: 5,
-//     img: Img5,
-//     title: "E-Ticaret Sitesi",
-//     href: "/what-we-do",
-//   },
-//   {
-//     id: 6,
-//     img: Img6,
-//     title: "Kurumsal Web Hzimeti",
-//     href: "/what-we-do",
-//   },
-//   {
-//     id: 7,
-//     img: Img7,
-//     title: "Alan Adı Sunucu Hizmeti",
-//     href: "/what-we-do",
-//   },
-//   {
-//     id: 8,
-//     img: Img8,
-//     title: "TV Reklam Çalışmaları",
-//     href: "/what-we-do",
-//   },
-// ];
 export const corporateImageData = [
   {
     id: 1,

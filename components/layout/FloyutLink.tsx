@@ -64,92 +64,136 @@ export const PricingContent = () => {
   return (
     <div className="grid w-screen grid-cols-4 gap-5 rounded-lg bg-black p-6 shadow-lg">
       <div className="flex w-full flex-col gap-y-1 rounded-lg bg-white p-3 shadow-md">
-        <Link href="/our-services/corporate-image-studies">
+        <Link href="/our-services/graphic-design">
           <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-            {t("common.corporate-image-studies")}
+            Grafik Tasarım
           </h2>
         </Link>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title={t("common.corporate-identity-studies")}
-            link="/test"
+            title="Cardvisit, Broşür ve Katalog Tasarımı"
+            link="/our-services/graphic-design"
+            as="/our-services/graphic-design#broşür"
           />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.graphic-design-studies")} link="/test" />
+          <NavLink
+            title="Afiş ve Banner Tasarımı"
+            link="/our-services/graphic-design"
+            as="/our-services/graphic-design#banner"
+          />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.promotional-films")} link="/test" />
+          <NavLink
+            title="Sosyal Medya Görselleri"
+            link="/our-services/graphic-design"
+            as="/our-services/graphic-design#social-media"
+          />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.post-production-service")} link="/test" />
-        </div>
-        <div className="flex items-center">
-          <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.brand-consultancy")} link="/test" />
+          <NavLink
+            title="Kurumsal Sunumlar"
+            link="/our-services/graphic-design"
+            as="/our-services/graphic-design#institutional"
+          />
         </div>
       </div>
+
       <div className="flex w-full flex-col  gap-y-1 rounded-lg bg-white p-3 shadow-md">
-        <Link href="/our-services/digital-media-studies">
+        <Link href="/our-services/brand-consultancy">
           <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-            {t("common.digital-media-studies")}
+            Marka Danışmanlığı
           </h2>
         </Link>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title={t("common.social-media-account-management")}
-            link="/test"
+            title="Marka Stratejisi"
+            link="/our-services/brand-consultancy"
+            as="/our-services/brand-consultancy#brand-strategy"
           />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title={t("common.social-media-advertising-management")}
-            link="/test"
+            title="Pazar Analizi"
+            link="/our-services/brand-consultancy"
+            as="/our-services/brand-consultancy#market-analysis"
           />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title={t("common.google-ads-advertising-management")}
-            link="/test"
+            title="Marka Konumlandırma"
+            link="/our-services/brand-consultancy"
+            as="/our-services/brand-consultancy#brand-positioning"
           />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
 
-          <NavLink title={t("common.registration-service-maps")} link="/test" />
-        </div>
-        <div className="flex items-center">
-          <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.seo-service")} link="/test" />
+          <NavLink
+            title="İtibar Yönetimi"
+            link="/our-services/brand-consultancy"
+            as="/our-services/brand-consultancy#reputation-management"
+          />
         </div>
       </div>
+
       <div className="flex w-full flex-col  gap-y-1 rounded-lg bg-white p-3 shadow-md">
-        <Link href="/our-services/contact-studies">
+        <Link href="/our-services/digital-media">
           <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-            {t("common.communication-studies")}
+            Dijital Medya
           </h2>
         </Link>
 
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.corporate-website")} link="/test" />
+          <NavLink
+            className="!text-[14px]"
+            title="Instagram, YouTube ve LinkedIn'de Etkin Varlık"
+            link="/our-services/digital-media"
+            as="/our-services/digital-media#account-management"
+          />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.e-commer-site")} link="/test" />
+          <NavLink
+            title="Hesap Yönetimi"
+            link="/our-services/digital-media"
+            as="/our-services/digital-media#account-management"
+          />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.des")} link="/test" />
+          <NavLink
+            title="İçerik Üretimi"
+            link="/our-services/digital-media"
+            as="/our-services/digital-media#content-production"
+          />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink
+            title="Rekam Kampanyaları"
+            link="/our-services/digital-media"
+            as="/our-services/digital-media#ads"
+          />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink
+            title="Analiz ve Raporlama"
+            link="/our-services/digital-media"
+            as="/our-services/digital-media#analysis"
+          />
         </div>
       </div>
+
       <div className="flex w-full flex-col  gap-y-1 rounded-lg bg-white p-3 shadow-md">
         <Link href="/our-services/software-studies">
           <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
@@ -159,15 +203,28 @@ export const PricingContent = () => {
 
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.tv-advertising-works")} link="/test" />
+          <NavLink
+            title="E-Ticaret Çözümleri ve Mobil Uygulamalar"
+            className="!text-sm"
+            link="/our-services/software-studies"
+            as="/our-services/software-studies#e-commerce-and-mobile-applications"
+          />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.radio-advertising-works")} link="/test" />
+          <NavLink
+            title="Kurumsal Web Sitesi"
+            link="/our-services/software-studies"
+            as="/our-services/software-studies#institutional"
+          />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.voice-over-service")} link="/test" />
+          <NavLink
+            title="E-Ticaret Sitesi"
+            link="/our-services/software-studies"
+            as="/our-services/software-studies#e-commerce"
+          />
         </div>
       </div>
     </div>
