@@ -11,8 +11,8 @@ import YoutubeSVG from "@/public/icons/youtube.svg";
 import InstagramSVG from "@/public/icons/instagram.svg";
 import FacebookSVG from "@/public/icons/facebook.svg";
 import LinkedinSVG from "@/public/icons/linkedin.svg";
-import PhoneSVG from "@/public/icons/phone.svg";
 import TwitterSVG from "@/public/icons/twitter.svg";
+import PhoneNumberLink from "../common/PhoneNumberLink ";
 
 const Footer = ({ className, ...rest }: ComponentPropsWithoutRef<"footer">) => {
   const t = useI18n();
@@ -73,12 +73,7 @@ const Footer = ({ className, ...rest }: ComponentPropsWithoutRef<"footer">) => {
                 info@digitallman.com
               </p>
             </a>
-            <div className="flex items-center gap-x-2">
-              <PhoneSVG className={svgClasses} />
-              <p className="text-xs font-semibold text-black lg:text-base">
-                0501 329 31 60
-              </p>
-            </div>
+            <PhoneNumberLink />
           </FooterGroup>
           <FooterGroup title={t("common.institutional")}>
             <NavLink title={t("common.about")} link="/about" />

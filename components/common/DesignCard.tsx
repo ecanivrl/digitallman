@@ -1,4 +1,3 @@
-import CorporatePng from "@/public/images/corporate.png";
 import NextImage from "@/components/NextImage";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
@@ -43,7 +42,7 @@ const DesignCard = ({
         className="flex max-w-2xl flex-col gap-y-2"
       >
         <motion.h1
-          variants={fadeIn("down", 0.4)}
+          variants={fadeIn("up", 0.4)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
