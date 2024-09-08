@@ -2,8 +2,8 @@
 
 import { twMerge } from "tailwind-merge";
 import UpArrowSVG from "@/public/icons/up-arrow.svg";
-import WhatsappSVG from "@/public/icons/whatsapp.svg";
 import { useEffect, useState } from "react";
+import Whatsapp from "../layout/Whatsapp";
 
 const ScrollToTopButton = ({ className }: { className?: string }) => {
   const [status, setStatus] = useState<boolean>(false);
@@ -21,7 +21,7 @@ const ScrollToTopButton = ({ className }: { className?: string }) => {
 
   return (
     <div className="flex flex-col gap-y-2">
-      <a
+      {/* <a
         href="https://wa.me/2348100000000"
         target="_blank"
         rel="noopener noreferrer"
@@ -33,7 +33,8 @@ const ScrollToTopButton = ({ className }: { className?: string }) => {
         )}
       >
         <WhatsappSVG className="h-10 w-10" />
-      </a>
+      </a> */}
+      <Whatsapp status={status} />
       {status && (
         <button
           onClick={() => {
