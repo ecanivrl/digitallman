@@ -23,13 +23,13 @@ const Address = ({ className }: { className?: string }) => {
       <div className="flex items-center gap-x-2">
         <MailSVG className={svgClasses} />
         <p className="text-xs font-semibold text-black sm:text-base">
-          example@gmail.com
+          info@digitallman.com
         </p>
       </div>
       <div className="flex items-center gap-x-2">
         <PhoneSVG className={svgClasses} />
         <p className="text-xs font-semibold text-black sm:text-base">
-          +90 123 456 78 90
+          0501 329 31 60
         </p>
       </div>
       <div className="flex items-center gap-x-2">

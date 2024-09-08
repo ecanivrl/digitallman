@@ -23,11 +23,9 @@ const AboutComponent = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.2 }}
-        className="flex w-full flex-col gap-y-7"
+        className="flex w-full flex-col"
       >
-        <p className="mb-5 text-sm md:mb-20 lg:text-lg">
-          {t("common.about-text")}
-        </p>
+        <p className="mb-8 text-sm lg:text-lg">{t("common.about-text")}</p>
         <Link href="/about">
           <Button showArrow={false} variant="negative" className="w-full">
             {t("common.learn-more")}

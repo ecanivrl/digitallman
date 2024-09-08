@@ -154,12 +154,15 @@ export const TopInformation = () => {
               Bozkurt Mah. Selvi Sok. No 1410. İstanbul, Türkiye
             </p>
           </div> */}
-          <div className="flex items-center gap-x-2">
+          <a
+            href="mailto:info@digitallman.com"
+            className="flex items-center gap-x-2"
+          >
             <MailSVG className={svgClasses} />
             <p className="text-xs font-semibold text-white lg:text-sm">
-              digitallman@gmail.com
+              info@digitallman.com
             </p>
-          </div>
+          </a>
           <div className="flex items-center justify-between gap-x-10">
             <div className="flex items-center gap-x-4">
               <span className="text-xs font-semibold text-white lg:text-sm">

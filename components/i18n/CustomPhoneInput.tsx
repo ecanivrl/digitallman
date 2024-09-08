@@ -198,7 +198,7 @@ const CustomPhoneInput = forwardRef<
             const newPhone = newValue
               ? newValue
               : `+${getCountryCallingCode(currentCountry)}`;
-            if (value == null) setInternalValue(newPhone);
+            if (value == null) setInternalValue(newPhone as E164Number);
             onChange?.(newPhone);
           }}
           className="PhoneInputInput w-full disabled:cursor-not-allowed disabled:opacity-[0.6]"

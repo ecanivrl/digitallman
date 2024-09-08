@@ -21,17 +21,17 @@ const OurServicesLink = ({ className }: { className?: string }) => {
       </h1>
       <Link href="/our-services/graphic-design">
         <Button variant="negative" className="w-full">
-          Grafik Tasarım
+          {t("common.graphic-design")}
         </Button>
       </Link>
       <Link href="/our-services/brand-consultancy">
         <Button variant="negative" className="w-full">
-          Marka Danışmanlığı
+          {t("common.brand-consultancy")}
         </Button>
       </Link>
       <Link href="/our-services/digital-media">
         <Button variant="negative" className="w-full">
-          Dijital Medya
+          {t("common.digital-media")}
         </Button>
       </Link>
       <Link href="/our-services/software-studies">

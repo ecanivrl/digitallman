@@ -28,6 +28,7 @@
     "intl-locale-textinfo-polyfill": "2.1.1",
     "jotai": "2.6.3",
     "jotai-devtools": "0.7.1",
+    "libphonenumber-js": "1.11.7",
     "lodash": "4.17.21",
     "next": "14.1.0",
     "next-impl-getters": "0.2.0",

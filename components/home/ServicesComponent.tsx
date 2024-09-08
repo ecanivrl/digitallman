@@ -4,6 +4,7 @@ import { useI18n } from "@/i18n/client";
 import { twMerge } from "tailwind-merge";
 import { NavLink } from "../layout/Navbar";
 import TickSVG from "@/public/icons/tick.svg";
+import Link from "next/link";
 
 const ServicesComponent = ({ designType }: { designType?: boolean }) => {
   const t = useI18n();
@@ -14,103 +15,183 @@ const ServicesComponent = ({ designType }: { designType?: boolean }) => {
         "grid grid-cols-1 gap-x-2 gap-y-6 md:grid-cols-2 xl:grid-cols-4",
       )}
     >
-      <div className="flex w-full flex-col gap-y-1 rounded-lg border-2 border-black bg-white p-3 shadow-md">
-        <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-          {t("common.corporate-image-studies")}
-        </h2>
+      <div className="flex w-full flex-col gap-y-1 rounded-lg border border-red-500 bg-white/10 p-3 shadow-md">
+        <Link href="/our-services/graphic-design">
+          <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
+            {t("common.graphic-design")}
+          </h2>
+        </Link>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title={t("common.corporate-identity-studies")}
-            link="/test"
+            className="!text-[14px]"
+            title={t("common.cardvisit-brochure-catalog-design")}
+            link="/our-services/graphic-design"
+            as="/our-services/graphic-design#broşür"
           />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.graphic-design-studies")} link="/test" />
+          <NavLink
+            title={t("common.poster-and-banner-design")}
+            link="/our-services/graphic-design"
+            as="/our-services/graphic-design#banner"
+          />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.promotional-films")} link="/test" />
+          <NavLink
+            title={t("common.social-media-images")}
+            link="/our-services/graphic-design"
+            as="/our-services/graphic-design#social-media"
+          />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.post-production-service")} link="/test" />
-        </div>
-        <div className="flex items-center">
-          <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.brand-consultancy")} link="/test" />
+          <NavLink
+            title={t("common.corporate-presentations")}
+            link="/our-services/graphic-design"
+            as="/our-services/graphic-design#institutional"
+          />
         </div>
       </div>
-      <div className="flex w-full flex-col gap-y-1 rounded-lg border-2 border-black bg-white p-3 shadow-md">
-        <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-          {t("common.digital-media-studies")}
-        </h2>
+
+      <div className="flex w-full flex-col  gap-y-1 rounded-lg border border-red-500 bg-white/10 p-3 shadow-md">
+        <Link href="/our-services/brand-consultancy">
+          <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
+            {t("common.brand-consultancy")}
+          </h2>
+        </Link>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title={t("common.social-media-account-management")}
-            link="/test"
+            title={t("common.brand-strategy")}
+            link="/our-services/brand-consultancy"
+            as="/our-services/brand-consultancy#brand-strategy"
           />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title={t("common.social-media-advertising-management")}
-            link="/test"
+            title={t("common.market-analysis")}
+            link="/our-services/brand-consultancy"
+            as="/our-services/brand-consultancy#market-analysis"
           />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title={t("common.google-ads-advertising-management")}
-            link="/test"
+            title={t("common.brand-positioning")}
+            link="/our-services/brand-consultancy"
+            as="/our-services/brand-consultancy#brand-positioning"
           />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
 
-          <NavLink title={t("common.registration-service-maps")} link="/test" />
-        </div>
-        <div className="flex items-center">
-          <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.seo-service")} link="/test" />
+          <NavLink
+            title={t("common.reputation-management")}
+            link="/our-services/brand-consultancy"
+            as="/our-services/brand-consultancy#reputation-management"
+          />
         </div>
       </div>
-      <div className="flex w-full flex-col gap-y-1 rounded-lg border-2 border-black bg-white p-3 shadow-md">
-        <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-          {t("common.communication-studies")}
-        </h2>
+
+      <div className="flex w-full flex-col  gap-y-1 rounded-lg border border-red-500 bg-white/10 p-3 shadow-md">
+        <Link href="/our-services/digital-media">
+          <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
+            {t("common.digital-media")}
+          </h2>
+        </Link>
 
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.corporate-website")} link="/test" />
+          <NavLink
+            title="Instagram, YouTube ve LinkedIn"
+            link="/our-services/digital-media"
+            as="/our-services/digital-media#account-management"
+          />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.e-commer-site")} link="/test" />
+          <NavLink
+            title={t("common.account-management")}
+            link="/our-services/digital-media"
+            as="/our-services/digital-media#account-management"
+          />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.des")} link="/test" />
+          <NavLink
+            title={t("common.content-production")}
+            link="/our-services/digital-media"
+            as="/our-services/digital-media#content-production"
+          />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink
+            title={t("common.ads")}
+            link="/our-services/digital-media"
+            as="/our-services/digital-media#ads"
+          />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink
+            title={t("common.analysis-and-reporting")}
+            link="/our-services/digital-media"
+            as="/our-services/digital-media#analysis"
+          />
         </div>
       </div>
-      <div className="flex w-full flex-col gap-y-1 rounded-lg border-2 border-black bg-white p-3 shadow-md">
-        <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-          {t("common.software-studies")}
-        </h2>
+
+      <div className="flex w-full flex-col  gap-y-1 rounded-lg border border-red-500 bg-white/10 p-3 shadow-md">
+        <Link href="/our-services/software-studies">
+          <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
+            {t("common.software-studies")}
+          </h2>
+        </Link>
 
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.tv-advertising-works")} link="/test" />
+          <NavLink
+            title={t("common.e-commerce")}
+            link="/our-services/software-studies"
+            as="/our-services/software-studies#e-commerce-and-mobile-applications"
+          />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.radio-advertising-works")} link="/test" />
+          <NavLink
+            title={t("common.mobile-applications")}
+            link="/our-services/software-studies"
+            as="/our-services/software-studies#e-commerce-and-mobile-applications"
+          />
         </div>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
-          <NavLink title={t("common.voice-over-service")} link="/test" />
+          <NavLink
+            title={t("common.corporate-website")}
+            link="/our-services/software-studies"
+            as="/our-services/software-studies#institutional"
+          />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink
+            title="SEO"
+            link="/our-services/software-studies"
+            as="/our-services/software-studies#e-commerce"
+          />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink
+            title={t("common.data-analysis")}
+            link="/our-services/software-studies"
+            as="/our-services/software-studies#e-commerce"
+          />
         </div>
       </div>
     </div>

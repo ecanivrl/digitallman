@@ -24,12 +24,7 @@ const OurDemosClientPage = () => {
             {t("common.our-demos")}
           </h1>
           <p className="my-2 text-center  text-base md:text-xl">
-            Daha fazlasını keşfetmek ve ürünlerimizin size nasıl yardımcı
-            olabileceğini görmek ister misiniz? Demolarımız, sunduğumuz
-            çözümleri ve özellikleri yakından deneyimlemeniz için mükemmel bir
-            fırsat sunar. Aşağıdaki videolar, etkileşimli demolar ve ekran
-            görüntüleri aracılığıyla ürünlerimizin gücünü ve esnekliğini
-            keşfedin. Hemen şimdi bir demo deneyin ve farkı kendiniz görün!
+            {t("common.our-demos-text")}
           </p>
 
           <Slider

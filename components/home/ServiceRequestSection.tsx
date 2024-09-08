@@ -147,7 +147,7 @@ const ServiceRequestSection = () => {
 
   const sendEmail = (emailContent: string) => {
     const encodedEmailContent = encodeURIComponent(emailContent);
-    window.location.href = `mailto:kadri503394@gmail.com?subject=Service Request&body=${encodedEmailContent}`;
+    window.location.href = `mailto:info@digitallman.com?subject=Service Request&body=${encodedEmailContent}`;
   };
 
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
@@ -168,9 +168,7 @@ const ServiceRequestSection = () => {
             {t("common.get-offer-now")}
           </h1>
           <p className="mb-10 max-w-2xl text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu lobortis
-            integer eu in. Ipsum magna a vestibulum erat ultricies gravida
-            egestas amet turpis.
+            {t("common.you-can-select-service")}
           </p>
           <form
             className="flex flex-col items-center"

@@ -62,17 +62,17 @@ export const PricingContent = () => {
   const t = useI18n();
 
   return (
-    <div className="grid w-screen grid-cols-4 gap-5 rounded-lg bg-black p-6 shadow-lg">
-      <div className="flex w-full flex-col gap-y-1 rounded-lg bg-white p-3 shadow-md">
+    <div className="grid w-screen grid-cols-4 gap-5 rounded-lg bg-white p-6 shadow-lg">
+      <div className="flex w-full flex-col gap-y-1 rounded-lg border border-red-500 bg-white/10 p-3 shadow-md">
         <Link href="/our-services/graphic-design">
           <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-            Grafik Tasarım
+            {t("common.graphic-design")}
           </h2>
         </Link>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="Cardvisit, Broşür ve Katalog Tasarımı"
+            title={t("common.cardvisit-brochure-catalog-design")}
             link="/our-services/graphic-design"
             as="/our-services/graphic-design#broşür"
           />
@@ -80,7 +80,7 @@ export const PricingContent = () => {
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="Afiş ve Banner Tasarımı"
+            title={t("common.poster-and-banner-design")}
             link="/our-services/graphic-design"
             as="/our-services/graphic-design#banner"
           />
@@ -88,7 +88,7 @@ export const PricingContent = () => {
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="Sosyal Medya Görselleri"
+            title={t("common.social-media-images")}
             link="/our-services/graphic-design"
             as="/our-services/graphic-design#social-media"
           />
@@ -96,23 +96,23 @@ export const PricingContent = () => {
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="Kurumsal Sunumlar"
+            title={t("common.corporate-presentations")}
             link="/our-services/graphic-design"
             as="/our-services/graphic-design#institutional"
           />
         </div>
       </div>
 
-      <div className="flex w-full flex-col  gap-y-1 rounded-lg bg-white p-3 shadow-md">
+      <div className="flex w-full flex-col  gap-y-1 rounded-lg border border-red-500 bg-white/10 p-3 shadow-md">
         <Link href="/our-services/brand-consultancy">
           <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-            Marka Danışmanlığı
+            {t("common.brand-consultancy")}
           </h2>
         </Link>
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="Marka Stratejisi"
+            title={t("common.brand-strategy")}
             link="/our-services/brand-consultancy"
             as="/our-services/brand-consultancy#brand-strategy"
           />
@@ -120,7 +120,7 @@ export const PricingContent = () => {
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="Pazar Analizi"
+            title={t("common.market-analysis")}
             link="/our-services/brand-consultancy"
             as="/our-services/brand-consultancy#market-analysis"
           />
@@ -128,7 +128,7 @@ export const PricingContent = () => {
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="Marka Konumlandırma"
+            title={t("common.brand-positioning")}
             link="/our-services/brand-consultancy"
             as="/our-services/brand-consultancy#brand-positioning"
           />
@@ -137,25 +137,24 @@ export const PricingContent = () => {
           <TickSVG className="h-4 w-4" />
 
           <NavLink
-            title="İtibar Yönetimi"
+            title={t("common.reputation-management")}
             link="/our-services/brand-consultancy"
             as="/our-services/brand-consultancy#reputation-management"
           />
         </div>
       </div>
 
-      <div className="flex w-full flex-col  gap-y-1 rounded-lg bg-white p-3 shadow-md">
+      <div className="flex w-full flex-col  gap-y-1 rounded-lg border border-red-500 bg-white/10 p-3 shadow-md">
         <Link href="/our-services/digital-media">
           <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
-            Dijital Medya
+            {t("common.digital-media")}
           </h2>
         </Link>
 
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            className="!text-[14px]"
-            title="Instagram, YouTube ve LinkedIn'de Etkin Varlık"
+            title="Instagram, YouTube ve LinkedIn"
             link="/our-services/digital-media"
             as="/our-services/digital-media#account-management"
           />
@@ -163,7 +162,7 @@ export const PricingContent = () => {
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="Hesap Yönetimi"
+            title={t("common.account-management")}
             link="/our-services/digital-media"
             as="/our-services/digital-media#account-management"
           />
@@ -171,7 +170,7 @@ export const PricingContent = () => {
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="İçerik Üretimi"
+            title={t("common.content-production")}
             link="/our-services/digital-media"
             as="/our-services/digital-media#content-production"
           />
@@ -179,7 +178,7 @@ export const PricingContent = () => {
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="Rekam Kampanyaları"
+            title={t("common.ads")}
             link="/our-services/digital-media"
             as="/our-services/digital-media#ads"
           />
@@ -187,14 +186,14 @@ export const PricingContent = () => {
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="Analiz ve Raporlama"
+            title={t("common.analysis-and-reporting")}
             link="/our-services/digital-media"
             as="/our-services/digital-media#analysis"
           />
         </div>
       </div>
 
-      <div className="flex w-full flex-col  gap-y-1 rounded-lg bg-white p-3 shadow-md">
+      <div className="flex w-full flex-col  gap-y-1 rounded-lg border border-red-500 bg-white/10 p-3 shadow-md">
         <Link href="/our-services/software-studies">
           <h2 className="rounded-md bg-red-500 py-2 text-center text-xl font-semibold text-white">
             {t("common.software-studies")}
@@ -204,8 +203,7 @@ export const PricingContent = () => {
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="E-Ticaret Çözümleri ve Mobil Uygulamalar"
-            className="!text-sm"
+            title={t("common.e-commerce")}
             link="/our-services/software-studies"
             as="/our-services/software-studies#e-commerce-and-mobile-applications"
           />
@@ -213,7 +211,15 @@ export const PricingContent = () => {
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="Kurumsal Web Sitesi"
+            title={t("common.mobile-applications")}
+            link="/our-services/software-studies"
+            as="/our-services/software-studies#e-commerce-and-mobile-applications"
+          />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink
+            title={t("common.corporate-website")}
             link="/our-services/software-studies"
             as="/our-services/software-studies#institutional"
           />
@@ -221,7 +227,15 @@ export const PricingContent = () => {
         <div className="flex items-center">
           <TickSVG className="h-4 w-4" />
           <NavLink
-            title="E-Ticaret Sitesi"
+            title="SEO"
+            link="/our-services/software-studies"
+            as="/our-services/software-studies#e-commerce"
+          />
+        </div>
+        <div className="flex items-center">
+          <TickSVG className="h-4 w-4" />
+          <NavLink
+            title={t("common.data-analysis")}
             link="/our-services/software-studies"
             as="/our-services/software-studies#e-commerce"
           />

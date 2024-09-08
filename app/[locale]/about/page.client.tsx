@@ -15,6 +15,7 @@ import SocialComponent from "@/components/contact/SocialComponent";
 
 const AboutClientPage = () => {
   const t = useI18n();
+
   return (
     <>
       <PageTopPaddingContainer>
@@ -30,6 +31,8 @@ const AboutClientPage = () => {
               alt="About Us"
               className="h-72 w-full object-cover object-center md:h-96"
             />
+            <p className="mb-4 text-sm lg:text-lg">{t("common.about-text1")}</p>
+            <p className="mb-4 text-sm lg:text-lg">{t("common.about-text2")}</p>
           </section>
         </PageHorizontalPaddingContainer>
       </PageTopPaddingContainer>

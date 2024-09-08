@@ -31,8 +31,9 @@ const Footer = ({ className, ...rest }: ComponentPropsWithoutRef<"footer">) => {
                 Digitallman.com
               </h1>
               <p className="text-xs font-semibold lg:text-base">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-                laborum, nesciunt mollitia laboriosam facilis aliquam quisquam.
+                {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+                laborum, nesciunt mollitia laboriosam facilis aliquam quisquam. */}
+                {t("common.footer-description")}
               </p>
             </div>
             <div className="flex flex-col gap-4">
@@ -63,16 +64,19 @@ const Footer = ({ className, ...rest }: ComponentPropsWithoutRef<"footer">) => {
                 Bozkurt Mah. Selvi Sok. No 10. İstanbul, Türkiye
               </p>
             </div>
-            <div className="my-4 flex items-center gap-x-2">
+            <a
+              href="mailto:info@digitallman.com"
+              className="my-4 flex items-center gap-x-2"
+            >
               <MailSVG className={svgClasses} />
               <p className="text-xs font-semibold text-black lg:text-base">
-                digitallman@gmail.com
+                info@digitallman.com
               </p>
-            </div>
+            </a>
             <div className="flex items-center gap-x-2">
               <PhoneSVG className={svgClasses} />
               <p className="text-xs font-semibold text-black lg:text-base">
-                09+ 123 456 78 90
+                0501 329 31 60
               </p>
             </div>
           </FooterGroup>
@@ -81,14 +85,28 @@ const Footer = ({ className, ...rest }: ComponentPropsWithoutRef<"footer">) => {
             <NavLink title={t("common.what-we-do")} link="/our-services" />
             <NavLink title={t("common.our-demos")} link="/our-demos" />
             <NavLink title={t("common.contact")} link="/contact" />
-            <NavLink title="KVKK" link="/kvkk" />
           </FooterGroup>
           <FooterGroup title={t("common.what-we-do")}>
-            <NavLink title={t("common.corporate-image-studies")} link="/c" />
-            <NavLink title={t("common.digital-media-studies")} link="/a" />
-            <NavLink title={t("common.software-studies")} link="/r" />
-            <NavLink title={t("common.communication-studies")} link="/g" />
-            <NavLink title={t("common.corporate-website")} link="/n" />
+            <NavLink
+              title={t("common.corporate-image-studies")}
+              link="/our-services/software-studies"
+            />
+            <NavLink
+              title={t("common.digital-media-studies")}
+              link="/our-services/digital-media"
+            />
+            <NavLink
+              title={t("common.software-studies")}
+              link="/our-services/software-studies"
+            />
+            <NavLink
+              title={t("common.communication-studies")}
+              link="/our-services/digital-media"
+            />
+            <NavLink
+              title={t("common.corporate-website")}
+              link="/our-services/software-studies"
+            />
           </FooterGroup>
         </div>
 
