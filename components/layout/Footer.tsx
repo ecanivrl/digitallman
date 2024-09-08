@@ -12,7 +12,7 @@ import InstagramSVG from "@/public/icons/instagram.svg";
 import FacebookSVG from "@/public/icons/facebook.svg";
 import LinkedinSVG from "@/public/icons/linkedin.svg";
 import TwitterSVG from "@/public/icons/twitter.svg";
-import PhoneNumberLink from "../common/PhoneNumberLink ";
+import PhoneNumberLink from "../common/PhoneNumberLink";
 
 const Footer = ({ className, ...rest }: ComponentPropsWithoutRef<"footer">) => {
   const t = useI18n();
@@ -132,3 +132,11 @@ export const FooterGroup = ({
     </div>
   );
 };
+
+// import { useCurrentLocale } from "@/i18n/client";
+// import { phoneNumbers } from "../../lib/data/phoneNumbers";
+
+// export function GetPhoneNumber() {
+//   const locale = useCurrentLocale();
+//   return phoneNumbers[locale] || phoneNumbers.en;
+// }
