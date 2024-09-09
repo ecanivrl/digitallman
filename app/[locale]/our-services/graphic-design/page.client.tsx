@@ -9,7 +9,6 @@ import {
   PageTopPaddingContainer,
 } from "@/components/common/containers";
 import OurServicesLink from "@/components/home/OurServicesLink";
-import Image, { StaticImageData } from "next/image";
 import GraphicPng from "@/public/images/graphic.png";
 import SocialPng from "@/public/images/img4.png";
 import DesignCard from "@/components/common/DesignCard";
@@ -37,16 +36,17 @@ const GraphicDesignClientPage = () => {
             title={t("common.creativity-in-visual-expression")}
             description={t("common.creavitiy-in-visual-expression-text")}
           />
+
           <DesignCard
             className="!flex-row-reverse"
-            imgUrl={GraphicPNG}
-            title={t("common.cardvisit-brochure-catalog-design")}
-            description={t("common.cardvisit-brochure-catalog-design-text")}
-          />
-          <DesignCard
             imgUrl={BilboardPNG}
             title={t("common.poster-and-banner-design")}
             description={t("common.poster-and-banner-text")}
+          />
+          <DesignCard
+            imgUrl={GraphicPNG}
+            title={t("common.cardvisit-brochure-catalog-design")}
+            description={t("common.cardvisit-brochure-catalog-design-text")}
           />
           <DesignCard
             className="!flex-row-reverse"
