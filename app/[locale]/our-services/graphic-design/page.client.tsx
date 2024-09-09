@@ -10,12 +10,12 @@ import {
 } from "@/components/common/containers";
 import OurServicesLink from "@/components/home/OurServicesLink";
 import Image, { StaticImageData } from "next/image";
-import CatalogPng from "@/public/images/catalog.jpg";
 import GraphicPng from "@/public/images/graphic.png";
-import BannerPng from "@/public/images/banner.jpg";
 import SocialPng from "@/public/images/img4.png";
 import DesignCard from "@/components/common/DesignCard";
 import CorporatePng from "@/public/images/corporate.png";
+import GraphicPNG from "@/public/images/graphic2.png";
+import BilboardPNG from "@/public/images/bilboard.png";
 
 const GraphicDesignClientPage = () => {
   const t = useI18n();
@@ -39,12 +39,12 @@ const GraphicDesignClientPage = () => {
           />
           <DesignCard
             className="!flex-row-reverse"
-            imgUrl={CatalogPng}
+            imgUrl={GraphicPNG}
             title={t("common.cardvisit-brochure-catalog-design")}
             description={t("common.cardvisit-brochure-catalog-design-text")}
           />
           <DesignCard
-            imgUrl={CatalogPng}
+            imgUrl={BilboardPNG}
             title={t("common.poster-and-banner-design")}
             description={t("common.poster-and-banner-text")}
           />

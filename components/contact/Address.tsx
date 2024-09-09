@@ -35,7 +35,7 @@ const Address = ({ className }: { className?: string }) => {
       <div className="flex items-center gap-x-2">
         <WhatsappSVG className={svgClasses} />
         <p className="text-xs font-semibold text-black sm:text-base">
-          +90 123 456 78 90
+          0501 329 31 60
         </p>
       </div>
     </div>
