@@ -2,6 +2,7 @@
 
 import React, { ComponentPropsWithoutRef } from "react";
 import { cn } from "../utils";
+import { motion } from "framer-motion";
 
 const Card = ({
   title,
